@@ -7,6 +7,7 @@
 
 enum custom_keycodes {
   RGB_SLD = ZSA_SAFE_RANGE,
+  ST_MACRO_0,
 };
 
 
@@ -36,14 +37,14 @@ enum tap_dance_codes {
   DANCE_21,
 };
 
-#define DUAL_FUNC_0 LT(6, KC_K)
-#define DUAL_FUNC_1 LT(15, KC_4)
-#define DUAL_FUNC_2 LT(2, KC_U)
-#define DUAL_FUNC_3 LT(4, KC_F18)
-#define DUAL_FUNC_4 LT(13, KC_H)
-#define DUAL_FUNC_5 LT(11, KC_F2)
-#define DUAL_FUNC_6 LT(8, KC_H)
-#define DUAL_FUNC_7 LT(1, KC_0)
+#define DUAL_FUNC_0 LT(2, KC_F11)
+#define DUAL_FUNC_1 LT(10, KC_Z)
+#define DUAL_FUNC_2 LT(5, KC_F9)
+#define DUAL_FUNC_3 LT(1, KC_F8)
+#define DUAL_FUNC_4 LT(4, KC_F20)
+#define DUAL_FUNC_5 LT(6, KC_F21)
+#define DUAL_FUNC_6 LT(5, KC_F8)
+#define DUAL_FUNC_7 LT(1, KC_W)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
@@ -63,20 +64,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_PGDN,        KC_TRANSPARENT, KC_PAGE_UP
   ),
   [2] = LAYOUT_moonlander(
-    KC_TRANSPARENT, KC_F1,          KC_F2,          KC_F3,          KC_PSCR,        KC_SCRL,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_PAUSE,       KC_NUM,         KC_SLASH,       KC_ASTR,        KC_MINUS,       KC_BSPC,        
-    KC_TRANSPARENT, KC_F4,          KC_F5,          KC_F6,          KC_INSERT,      KC_HOME,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_PAGE_UP,     KC_7,           KC_8,           KC_9,           KC_PLUS,        KC_ENTER,       
-    KC_TRANSPARENT, KC_F7,          KC_F8,          KC_F9,          KC_DELETE,      KC_END,         KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_PGDN,        KC_4,           KC_5,           KC_6,           KC_COMMA,       KC_ENTER,       
-    KC_TRANSPARENT, KC_F10,         KC_F11,         KC_F12,         KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_EQUAL,       KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_F10,         KC_F11,         KC_F12,         KC_PSCR,        KC_SCRL,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_PAUSE,       KC_NUM,         KC_SLASH,       KC_ASTR,        KC_MINUS,       KC_BSPC,        
+    KC_TRANSPARENT, KC_F7,          KC_F8,          KC_F9,          KC_INSERT,      KC_HOME,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_PAGE_UP,     KC_7,           KC_8,           KC_9,           KC_PLUS,        KC_ENTER,       
+    KC_TRANSPARENT, KC_F4,          KC_F5,          KC_F6,          KC_DELETE,      KC_END,         KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_PGDN,        KC_4,           KC_5,           KC_6,           KC_COMMA,       KC_ENTER,       
+    KC_TRANSPARENT, KC_F1,          KC_F2,          KC_F3,          KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_EQUAL,       KC_TRANSPARENT, 
     TD(DANCE_14),   KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, TO(1),                                                                                                          TO(3),          KC_0,           KC_DOT,         KC_KP_ENTER,    KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [3] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, ST_MACRO_0,     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     TD(DANCE_15),   KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, TO(2),                                                                                                          TO(4),          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
+    KC_TRANSPARENT, LCTL(LSFT(KC_U)),KC_TRANSPARENT,                 KC_TRANSPARENT, KC_ENTER,       KC_TRANSPARENT
   ),
   [4] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
@@ -896,6 +897,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         wait_ms(2);
         del_mods(QK_MODS_GET_MODS(keycode));
       }
+    }
+    break;
+    case ST_MACRO_0:
+    if (record->event.pressed) {
+      SEND_STRING(SS_LCTL(SS_LSFT(SS_TAP(X_U)))SS_DELAY(100)  SS_TAP(X_KP_2)SS_DELAY(100)  SS_TAP(X_KP_7)SS_DELAY(100)  SS_TAP(X_KP_6)SS_DELAY(100)  SS_TAP(X_KP_5)  SS_DELAY(100) SS_TAP(X_ENTER));
     }
     break;
 
